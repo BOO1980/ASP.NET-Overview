@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Creating Your First ASP.NET Web site (Visual Basic)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Creating Your First ASP.NET Web site (Visual Basic)</h1>
+        <ol><li>Open Visual Studio</li>
+            <li>Click File Menu and Choose New Project</li>
+            <li>Select Visual Basic</li>
+            <li>Select Web</li>
+            <li>Select Previous Versions</li>
+            <li>Select ASP.NET Web Forms Site</li>
+            <li>Select .NET Framework from the drop down list</li>
+         
+            <li>Change the location on the disk where you want the Web site stored</li>
+            <li>Open the file Default.aspx by double clicking it</li>
+            <li>Remove all the code inside the &lt;asp:Content&gt; block that has its ID set to BodyContent (it starts with &lt;div&gt; at line 5 and ends with &lt;/div&gt;) all the way to the bottom.</li>
+            <li>Replace it with the following bolded code
+            
+                <p>&lt;h2&gt;Hello World &lt;/h2&gt;</p>
+                <p> &lt;p&gt;Welcome to Beginning ASP.NET 4.5.1 on <%: DateTime.Now.ToString() %>&lt;/p&gt;</p></li>
+            <li>You will notice a small icon representing IIS Express, this is a web server that has been started by VS automatically to serve the request for the page  <p><img src="../../images/IIS-Express-Icon.png" alt=""/></p></li>
+           
+        </ol>
+        <h2>How it Works</h2>
+        <p>Although the website is simple, the process that eventually results in the page Default.aspx being displayed in your browser isn't so simple.  ASP.BET page can't do much.  It needs to be processed and served by a web server before the browser can display it.  Thats why VS automatically started up by IIS Express to handle the request for the page</p>
+        <p>It is important to realize that the ASPX file you modified in VS is not the same as the one that eventually gets displayed by the browser</p> 
+        <p>When you create a page in VS you add markup to it.  The markup is an aspx page that is a combination of HTML code for ASP.NET Server controls, code written in Visual Basic.NET or C# and more</p>
+        <p>When you request as ASPX page in your browser the web server process the page, executes any server-side code it finds in the file, and effectiveness transforms the ASP.NET markup into plain HTML that it then sends to the browser, where it is displayed</p></body>
+</html>

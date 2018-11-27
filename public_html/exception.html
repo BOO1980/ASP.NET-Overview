@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+The HandleErrorAttribute method delegate is already added to the filters collection in the RegisterGlobalFilters method of the FilterConfig class as follows:
+
+    public class FilterConfig
+    {
+        public static void RegisterGlobalFilters(GlobalFilterCollection filters)
+        {
+            filters.Add(new HandleErrorAttribute());
+        }
+    }
+
+
+You add code to throw a new error in the development environment to confirm what a user would see when they encounter this error. The call to the web page displays the "yellow screen of death" instead of the error view as you had expected. What should you do to correct this problem?
+
+Correct -
+Add a customErrors element with mode="On" in the system.web element of the web.config file
+
+Your choice: incorrect -
+Add a custom Exception filter to the method to handle the specific exception
+
+Incorrect -
+Add a customErrors element with mode="Off" in the system.web element of the web.config file
+
+Incorrect -
+Add a new HandleErrorAttribute method delegate and pass the "Dev" variable in the delegate signature
+    </body>
+</html>
