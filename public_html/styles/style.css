@@ -1,0 +1,79 @@
+#body { margin:0; padding:0; font-size:100%; line-height:1; }
+p{
+    line-height: normal;
+}
+.c-code-statement {
+    text-transform: uppercase;
+}
+.c-code-state-exp-txt{
+    color: blue;
+    font-weight: 600;
+}
+
+.c-code-statement-link {
+    padding: 10px 0 10px 0;
+}
+
+.c-code {
+    background-color: lightcyan;
+    padding: 10px 0 10px 10px;
+    font-size: 14px;
+}
+.c-code p{
+    margin-bottom: 8px;
+    margin-top: 8px;
+    font-family: courier;
+}
+
+.c-code-example, .table-compare{
+    display: flex;
+    padding: 0 50px 20px 50px;
+}
+
+.c-code-example-wo-table {
+    display:block;
+    padding: 0 50px 0 50px;
+}
+
+
+.c-code-code-and-table {
+    float: left;
+    width:40%;
+    padding-right:  5px;
+    padding: 10px 0 0 10px;
+}
+
+.result-set {
+    float: right;
+    width: 70%;
+    padding-left: 5px;
+    font-size: small;
+}
+
+.result-set-without{
+    float: left;
+    width: 50%;
+    padding-right: 5px;
+}
+.result-set-with{
+    float:right;
+    width:50%;
+        padding-left: 5px;
+}.comment {
+    color:green;
+}
+
+.c-blue{
+    color: #008;
+}
+.c-purple{
+    color: #7f0055;
+}
+.c-green{
+   color: #080;
+}
+
+
+.c-drk-green {
+    color: #660;
+}
