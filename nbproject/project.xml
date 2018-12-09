@@ -6,8 +6,13 @@
             <name>ASP-dot-NET-Overview</name>
         </data>
         <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>HRef</word>
+            <word>HTML</word>
+            <word>http</word>
             <word>namespace</word>
             <word>namespaces</word>
+            <word>runat</word>
+            <word>www</word>
         </spellchecker-wordlist>
     </configuration>
 </project>

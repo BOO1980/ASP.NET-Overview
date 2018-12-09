@@ -1,7 +1,7 @@
 ﻿<!--directives-->
 <%@ Page Language="C#" %>
 <!--code section-->
-<script runat="server">
+<script runat="server"> //"runat="server" attribute indicates that the form should be processed on the server.  It also indicates that the enclosed controls can be accessed by server scripts
     private void convertoupper(object sender, EventArgs e) {
         string str = myText.Value;
         changed_text.InnerHtml = str.ToUpper();

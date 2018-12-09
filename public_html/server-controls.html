@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Server Controls</title>
+        <meta charset="UTF-8">
+        <link href="styles/style.css" rel="stylesheet" type="text/css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Server Controls</h1>
+        <h2>HTML Server Controls</h2>
+        <h4>runat = "server"</h4>
+        <ul><li>HTML server controls are understood by the server</li>
+            <li>This attribute indicates that the element should be treated as a server control.</li>
+            <li>The ID attribute is added to identify the server control.</li>
+            <li>The ID reference can be used to manipulate the server control at run-time</li>
+        </ul>
+        <h3>Example</h3>
+        <p>In the following example we declare an HtmlAnchor server control in an .aspx files.  Then we manipulate the HRef attribute of the HtmlAnchor control in an event handler (an event handler is a subroutine that executes code for a given event)</p>
+        <div class="c-code">
+            <p>&lt;script runat="server"&gt;</p>
+            <p class="tab-1">Sub Page_Load</p>
+            <p class="tab-2">link1.HRef="http://www.w3schools.com"</p>
+            <p>End Sub</p>
+            <p>&lt;/script&gt;</p>
+            <br/>            
+            <p>&lt;html&gt;</p>
+            <p>&lt;body&gt;</p>
+            <p class="tab-1">&lt;form runat="server"&gt;</p>
+            <p class="tab-2">&lt;a id="link1" runat="server"&gt; Visit W3Schools!&lt;/a&gt;</p>
+            <p class="tab-1">&lt;/form&gt;</p> 
+            <p>&lt;/body&gt;</p> 
+            <p>&lt;/html&gt;</p> 
+        </div>
+        
+        <h2>Web Server Controls</h2>
+        <ul><li>Web server controls are special ASP.NET tag understood by the server</li>
+            <li>Link HTML server controls, web server controls are also created on the server and require runat=server attribute to work</li>
+            <li>Web server controls do not necessarily map to any existing HTML elements and they may represent more complex elements</li></ul> 
+            <h3>Example</h3>
+        <p>In the following example we declare an HtmlAnchor server control in an .aspx files.  Then we manipulate the HRef attribute of the HtmlAnchor control in an event handler (an event handler is a subroutine that executes code for a given event)</p>
+        <div class="c-code">
+            <p>&lt;script runat="server"&gt;</p>
+            <p class="tab-1">Sub submit (Source As Object, e As EventArgs)</p>
+            <p class="tab-2">button1.Text="You clicked me!"</p>
+            <p>End Sub</p>
+            <p>&lt;/script&gt;</p>
+            <br/>            
+            <p>&lt;html&gt;</p>
+            <p>&lt;body&gt;</p>
+            <p class="tab-1">&lt;form runat="server"&gt;</p>
+            <p class="tab-2">&lt;asp: Button id="button1" Text="Click me!";</p>
+            <p class="tab-1">runat="server" OnClick="submit" /&gt;</p>
+            <p>&lt;/form&gt;</p> 
+            <p>&lt;/body&gt;</p> 
+            <p>&lt;/html&gt;</p> 
+        </div>
+    </body>
+</html>
